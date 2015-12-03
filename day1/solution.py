@@ -17,4 +17,4 @@ def solve():
 
 if __name__=="__main__":
     floor, position = solve()
-    print("The solution is %d %d" % (floor, position))
+    print("The solution is:\n %d floor \n%d position" % (floor, position))
