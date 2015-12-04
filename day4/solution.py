@@ -1,10 +1,10 @@
-from hashlib import md5
+import md5
 
 inputval = "yzbqklnj"
 i = 0
 while True:
     test = inputval + str(i)
-    digest = md5(test).hexdigest()
+    digest = md5.new(test).hexdigest()
     if digest[0:5] == "00000":
         print(digest)
         print(i)
@@ -14,7 +14,7 @@ while True:
 i = 0
 while True:
     test = inputval + str(i)
-    digest = md5(test).hexdigest()
+    digest = md5.new(test).hexdigest()
     if digest[0:6] == "000000":
         print(digest)
         print(i)
